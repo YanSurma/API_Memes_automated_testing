@@ -1,6 +1,5 @@
 import allure
 import requests
-
 from endpoints.endpoint import Endpoint
 
 

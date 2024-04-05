@@ -1,6 +1,5 @@
 import allure
 import requests
-
 from endpoints.endpoint import Endpoint
 
 
@@ -50,7 +49,3 @@ class Authorization(Endpoint):
         assert '<title>400 Bad Request</title>' in self.html_response
         assert '<h1>Bad Request</h1>' in self.html_response
         assert '<p>Invalid parameters</p>' in self.html_response
-
-
-test = Authorization()
-test.authorize_user_with_integer_name()

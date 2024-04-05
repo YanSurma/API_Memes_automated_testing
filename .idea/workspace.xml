@@ -5,24 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b15ab4be-a2a9-46ba-a98c-e14a9666ee8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/API_Memes_automated_testing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_bodies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/authorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/check_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/check_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/create_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/create_mem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/delete_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/delete_mem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/endpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/endpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/get_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/get_mem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/put_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/put_meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_memes_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_memes_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2eeCNMhjvq7La6rWPQETbxw1kC7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,8 +45,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_memes_api.test_authorize.executor": "Run",
     "Python tests.Python tests for test_memes_api.test_authorize_user_with_integer_name.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_check_expired_token.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_create_mem.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_create_new_mem_with_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_get_all_mems.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_get_mem_by_id.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_put_mem.executor": "Run",
+    "Python tests.Python tests for test_memes_api.test_token_with_invalid_token.executor": "Run",
+    "Python tests.Python tests in test_querry.py.executor": "Run",
     "Python.authorization.executor": "Run",
+    "Python.check_token.executor": "Run",
+    "Python.create_mem.executor": "Run",
+    "Python.querry.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -45,8 +71,8 @@
       <recent name="P:\Repositories\API_Memes_automated_testing\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_memes_api.test_authorize_user_with_integer_name">
-    <configuration name="authorization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_memes_api.test_get_mem_by_id">
+    <configuration name="querry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="API_Memes_automated_testing" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/endpoints" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/endpoints/authorization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/querry.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -68,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_memes_api.test_authorize_user_with_integer_name" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_memes_api.test_check_expired_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="API_Memes_automated_testing" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,14 +105,92 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_memes_api.test_authorize_user_with_integer_name&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_check_expired_token&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_memes_api.test_create_mem" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API_Memes_automated_testing" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_create_mem&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_memes_api.test_create_new_mem_with_invalid_data" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+      <module name="API_Memes_automated_testing" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_create_new_mem_with_invalid_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_memes_api.test_get_mem_by_id" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API_Memes_automated_testing" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_get_mem_by_id&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_memes_api.test_put_mem" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API_Memes_automated_testing" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_put_mem&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_memes_api.test_token_with_invalid_token" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+      <module name="API_Memes_automated_testing" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_memes_api.test_token_with_invalid_token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_memes_api.test_authorize_user_with_integer_name" />
-        <item itemvalue="Python.authorization" />
+        <item itemvalue="Python tests.Python tests for test_memes_api.test_get_mem_by_id" />
+        <item itemvalue="Python tests.Python tests for test_memes_api.test_put_mem" />
+        <item itemvalue="Python tests.Python tests for test_memes_api.test_check_expired_token" />
+        <item itemvalue="Python tests.Python tests for test_memes_api.test_create_mem" />
+        <item itemvalue="Python.querry" />
       </list>
     </recent_temporary>
   </component>

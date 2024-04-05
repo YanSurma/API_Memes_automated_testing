@@ -1,5 +1,4 @@
 import allure
-import requests
 
 
 class Endpoint:

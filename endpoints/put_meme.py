@@ -5,6 +5,7 @@ from endpoints.endpoint import Endpoint
 
 class PutMem(Endpoint):
     json = None
+    mem_id = None
 
     @allure.step('Put meme data')
     def put_new_mem(self, token, mem_id):
@@ -28,6 +29,7 @@ class PutMem(Endpoint):
                                      json=body,
                                      headers=headers)
         self.json = self.response.json()
+        print(self.json)
         return self.json
 
     @allure.step('Check response text changed')

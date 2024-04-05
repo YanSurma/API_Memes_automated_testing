@@ -1,8 +1,7 @@
 import allure
 import pytest
-import requests
 
-from data import AUTH_BODY, CREATE_BODY
+from json_bodies import AUTH_BODY, CREATE_BODY, NEGATIVE_DATA
 
 
 @allure.feature('Smoke test')
@@ -29,10 +28,16 @@ def test_token_is_valid(check_token_endpoint, session_token):
     check_token_endpoint.check_success_response_text()
 
 
+def test_token_with_invalid_token(check_token_endpoint):
+    check_token_endpoint.check_token_with_invalid_token()
+    check_token_endpoint.check_status_code_404()
+    check_token_endpoint.check_html_error_404()
+
+
 @allure.feature('Smoke test')
-def test_get_all_mems(all_memes_endpoint, session_token):
-    all_memes_endpoint.get_all_mems(session_token)
-    all_memes_endpoint.check_status_code_200()
+def test_get_all_mems(get_all_mems_endpoint, session_token):
+    get_all_mems_endpoint.get_all_mems(session_token)
+    get_all_mems_endpoint.check_status_code_200()
 
 
 @pytest.mark.parametrize('data', CREATE_BODY)
@@ -46,22 +51,30 @@ def test_create_mem(create_mem_endpoint, session_token, data):
     create_mem_endpoint.check_response_info_same_as_sent(data["info"])
 
 
+@pytest.mark.parametrize('negative_data', NEGATIVE_DATA)
 @allure.feature('Smoke test')
-def test_put_mem(session_token, put_meme_endpoint, create_set_id):
-    put_meme_endpoint.put_new_mem(token=session_token, mem_id=create_set_id)
-    put_meme_endpoint.check_status_code_200()
-    put_meme_endpoint.check_response_text_changed()
-    put_meme_endpoint.check_response_url_changed()
-
-
-@allure.feature('Smoke test')
-def test_get_mem_by_id(one_meme_endpoint, session_token, create_set_delete_id):
-    one_meme_endpoint.get_mem_by_id(session_token, mem_id=create_set_delete_id)
-    one_meme_endpoint.check_status_code_200()
+@allure.title('BUG:The integer value created for "tags" key, but only strings supports')
+def test_create_new_mem_with_invalid_data(create_mem_endpoint, session_token, negative_data):
+    create_mem_endpoint.create_new_mem_with_invalid_data(body=negative_data, token=session_token)
+    create_mem_endpoint.check_html_error_400()
 
 
 @allure.feature('Smoke test')
-def test_delete_mem(delete_meme_endpoint, session_token, create_set_id):
-    delete_meme_endpoint.delete_mem_by_id(token=session_token, mem_id=create_set_id)
-    delete_meme_endpoint.check_status_code_200()
-    delete_meme_endpoint.check_success_delete_text(mem_id=create_set_id)
+def test_get_mem_by_id(get_mem_endpoint, session_token, create_set_delete_id):
+    get_mem_endpoint.get_mem_by_id(session_token, mem_id=create_set_delete_id)
+    get_mem_endpoint.check_status_code_200()
+
+
+@allure.feature('Smoke test')
+def test_put_mem(session_token, put_mem_endpoint, create_set_id, get_mem_endpoint):
+    put_mem_endpoint.put_new_mem(token=session_token, mem_id=create_set_id)
+    put_mem_endpoint.check_status_code_200()
+    put_mem_endpoint.check_response_text_changed()
+    put_mem_endpoint.check_response_url_changed()
+
+
+@allure.feature('Smoke test')
+def test_delete_mem(delete_mem_endpoint, session_token, create_set_id):
+    delete_mem_endpoint.delete_mem_by_id(token=session_token, mem_id=create_set_id)
+    delete_mem_endpoint.check_status_code_200()
+    delete_mem_endpoint.check_success_delete_text(mem_id=create_set_id)

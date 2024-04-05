@@ -1,7 +1,5 @@
 import allure
 import requests
-
-from data import CREATE_BODY
 from endpoints.endpoint import Endpoint
 
 
