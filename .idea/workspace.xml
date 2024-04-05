@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b15ab4be-a2a9-46ba-a98c-e14a9666ee8d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_bodies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/authorization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/check_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/check_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/create_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/create_mem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/delete_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/delete_mem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/endpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/endpoint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/get_mem.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/get_mem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endpoints/put_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/put_meme.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_memes_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_memes_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +50,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">

@@ -7,5 +7,5 @@ credentials.py
 .env
 allure-results
 allure-report
-.idea/workspace.xml
 .idea
+
