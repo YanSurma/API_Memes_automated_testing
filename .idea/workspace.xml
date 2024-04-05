@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b15ab4be-a2a9-46ba-a98c-e14a9666ee8d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="b15ab4be-a2a9-46ba-a98c-e14a9666ee8d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,28 +63,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_memes_api.test_get_mem_by_id">
-    <configuration name="querry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="API_Memes_automated_testing" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/querry.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_memes_api.test_check_expired_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="API_Memes_automated_testing" />
       <option name="ENV_FILES" value="" />
@@ -183,7 +159,6 @@
         <item itemvalue="Python tests.Python tests for test_memes_api.test_put_mem" />
         <item itemvalue="Python tests.Python tests for test_memes_api.test_check_expired_token" />
         <item itemvalue="Python tests.Python tests for test_memes_api.test_create_mem" />
-        <item itemvalue="Python.querry" />
       </list>
     </recent_temporary>
   </component>
