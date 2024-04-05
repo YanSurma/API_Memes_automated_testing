@@ -4,44 +4,44 @@ import pytest
 from json_bodies import AUTH_BODY, CREATE_BODY, NEGATIVE_CREATE_BODY
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_authorize(authorize_endpoint):
     authorize_endpoint.authorize_user(body=AUTH_BODY)
     authorize_endpoint.check_status_code_200()
     authorize_endpoint.check_response_user_name()
 
-
+@allure.feature('Negative run')
 def test_authorize_user_with_empty_json(authorize_endpoint):
     authorize_endpoint.authorize_user_with_empty_json()
     authorize_endpoint.check_status_code_400()
 
-
+@allure.feature('Negative run')
 def test_authorize_user_with_integer_name(authorize_endpoint):
     authorize_endpoint.authorize_user_with_integer_name()
     authorize_endpoint.check_status_code_400()
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_token_is_valid(check_token_endpoint, session_token):
     check_token_endpoint.check_token_is_valid(token=session_token)
     check_token_endpoint.check_status_code_200()
     check_token_endpoint.check_success_response_text()
 
-
+@allure.feature('Negative run')
 def test_token_with_invalid_token(check_token_endpoint):
     check_token_endpoint.check_token_with_invalid_token()
     check_token_endpoint.check_status_code_404()
     check_token_endpoint.check_html_error_404()
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_get_all_mems(get_all_mems_endpoint, session_token):
     get_all_mems_endpoint.get_all_mems(session_token)
     get_all_mems_endpoint.check_status_code_200()
 
 
 @pytest.mark.parametrize('data', CREATE_BODY)
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_create_mem(create_mem_endpoint, session_token, data, get_mem_endpoint):
     create_mem_endpoint.create_new_mem(body=data, token=session_token)
     create_mem_endpoint.check_status_code_200()
@@ -57,7 +57,7 @@ def test_create_mem(create_mem_endpoint, session_token, data, get_mem_endpoint):
 
 
 @pytest.mark.parametrize('negative_data', NEGATIVE_CREATE_BODY)
-@allure.feature('Smoke test')
+@allure.feature('Negative run')
 @allure.title('BUG:The integer value created for "tags" and "colorors" key, but only strings supports')
 def test_create_new_mem_with_invalid_data(create_mem_endpoint, session_token, negative_data):
     create_mem_endpoint.create_new_mem_with_invalid_data(body=negative_data, token=session_token)
@@ -65,14 +65,14 @@ def test_create_new_mem_with_invalid_data(create_mem_endpoint, session_token, ne
     create_mem_endpoint.check_html_error_400()
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_get_mem_by_id(get_mem_endpoint, session_token, create_set_delete_id):
     get_mem_endpoint.get_mem_by_id(session_token, mem_id=create_set_delete_id)
     get_mem_endpoint.check_status_code_200()
     get_mem_endpoint.check_that_mem_id_same_as_sent(create_set_delete_id)
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_put_mem(session_token, put_mem_endpoint, create_set_id, get_mem_endpoint):
     put_mem_endpoint.put_new_mem(token=session_token, mem_id=create_set_id)
     put_mem_endpoint.check_status_code_200()
@@ -85,7 +85,7 @@ def test_put_mem(session_token, put_mem_endpoint, create_set_id, get_mem_endpoin
         assert put_response == get_response, 'Get response not equal to put'
 
 
-@allure.feature('Smoke test')
+@allure.feature('Positive run')
 def test_delete_mem(delete_mem_endpoint, session_token, create_set_id, get_mem_endpoint):
     delete_mem_endpoint.delete_mem_by_id(token=session_token, mem_id=create_set_id)
     delete_mem_endpoint.check_status_code_200()
