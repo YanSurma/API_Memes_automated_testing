@@ -21,7 +21,7 @@ CREATE_BODY = [
         "info": {"coloros": ["white", "beige"]}
     }
 ]
-NEGATIVE_DATA = [
+NEGATIVE_CREATE_BODY = [
     {
         "text": 1,
         "url": "https://upload.wikimedia.org/wikipedia/ru/thumb/4/4d/Wojak.png/200px-Wojak.png",
@@ -67,3 +67,4 @@ NEGATIVE_DATA = [
         "tags": ["mem", "man"],
     }
 ]
+
